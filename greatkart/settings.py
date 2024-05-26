@@ -151,3 +151,6 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mr.emanuelcg@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST_PASSWORD = 'euma qjvc pdoa kphz'
+
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'

@@ -36,6 +36,7 @@ def register(request):
 
             # USER ACTIVATION
             current_site = get_current_site(request)
+            # Send email
             mail_subject = "Plase activate you account"
             message = render_to_string('accounts/account_verification_email.html', {
                 'user': user,
