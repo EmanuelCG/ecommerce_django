@@ -2,6 +2,7 @@ from django.db import models
 from category.models import Category
 from django.urls import reverse
 from accounts.models import Account
+from django.db.models import Avg, Count
 # Create your models here.
 
 
@@ -22,7 +23,19 @@ class Product(models.Model):
 
     def __str__(self):
         return self.product_name
-
+    
+    def averageReview(self):
+        reviews = ReviewRating.objects.filter(product = self, status=True).aggregate(average=Avg('rating'))
+        avg = 0
+        if reviews['average'] is not None:
+            avg = round(float(reviews['average']), 2)
+        return avg
+    def countRewiew(self):
+        review = ReviewRating.objects.filter(product=self, status=True).aggregate(count=Count('id'))
+        count= 0
+        if review['count'] is not None:
+            count = int(review['count'])
+        return count
 
 class VariationManager(models.Manager):
     def colors(self):
@@ -60,8 +73,8 @@ class ReviewRating(models.Model):
     rating = models.FloatField()
     ip = models.CharField(max_length=20, blank=True)
     status = models.BooleanField(default=True)
-    create_date = models.DateField(auto_now_add=True)
-    update_date = models.DateField(auto_now_add=True)
+    created_at = models.DateField(auto_now_add=True)
+    updated_at = models.DateField(auto_now=True)
 
     def __str__(self):
         return self.subject
