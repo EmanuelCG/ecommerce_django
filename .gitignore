@@ -1,2 +1,44 @@
+# Archivo de variables de entorno
 .env
+
+# Archivos y carpetas generados por el sistema operativo
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Archivos de configuración de Django
+*.log
+*.pot
+*.pyc
+local_settings.py
+
+# Archivos de configuración de entorno virtual (si usas uno)
 env-ecommerce/
+env/
+
+# Archivos de dependencias instaladas (si no utilizas Pipenv)
+# Cámbialo según tu gestor de paquetes (por ejemplo, `requirements.txt` para pip)
+# Si usas Pipenv, no necesitas esta línea porque la dependencias se almacenan en el archivo Pipfile.lock
+# requirements.txt
+
+# Archivos estáticos y archivos compilados
+staticfiles/
+node_modules/
+dist/
+
+# Archivos de medios (cargados por usuarios)
+media/
+
+# Archivos de caché y temporales
+*.swp
+*.swo
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Carpeta de migraciones (generada por Django)
+*/migrations/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
