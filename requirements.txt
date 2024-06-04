@@ -14,7 +14,11 @@ idna==3.7
 jmespath==1.0.1
 pathspec==0.10.1
 pillow==10.3.0
+<<<<<<< HEAD
 pypiwin32==223
+=======
+psycopg2-binary==2.9.9
+>>>>>>> 1151184... postgres configuration
 python-dateutil==2.9.0.post0
 python-decouple==3.8
 python-ipware==3.0.0
