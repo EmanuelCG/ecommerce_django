@@ -15,7 +15,7 @@ local_settings.py
 # Archivos de configuración de entorno virtual (si usas uno)
 env-ecommerce/
 env/
-
+media/
 # Archivos de dependencias instaladas (si no utilizas Pipenv)
 # Cámbialo según tu gestor de paquetes (por ejemplo, `requirements.txt` para pip)
 # Si usas Pipenv, no necesitas esta línea porque la dependencias se almacenan en el archivo Pipfile.lock
