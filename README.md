@@ -2,12 +2,12 @@
 
 Hola a todos 👨🏻‍💻, 
 
-Comparto este proyecto ecommerce desarrollado con Python, Django y Bootstrap.<br>
+Comparto este proyecto ecommerce desarrollado en Django con pasarela de pagos paypal integrada. <br>
 Espero les sea util ❤️
 
 ## Tecnologías
 
-[![My Skills](https://skillicons.dev/icons?i=python,django,bootstrap,html,css,js,jquery,postgres)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,django,bootstrap,html,css,js,jquery,postgres,paypal)](https://skillicons.dev)
 
 
 
