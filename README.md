@@ -3,7 +3,7 @@
 Hola a todos 👨🏻‍💻, 
 
 Comparto este proyecto ecommerce desarrollado en Django con pasarela de pagos paypal integrada. <br>
-Espero les sea util ❤️
+Espero les sea util.
 
 ## Tecnologías
 
