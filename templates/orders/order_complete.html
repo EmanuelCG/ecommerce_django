@@ -6,10 +6,10 @@
     <center>
       <i class="fas fa-check-circle" style="font-size: 72px;margin-bottom: 20px;color: #28A745;"></i>
     </center>
-    <h2 class="text-center">Payment Successful</h2>
+    <h2 class="text-center">Pago completado</h2>
     <br />
     <div class="text-center">
-      <a href="{% url 'store' %}" class="btn btn-success">Shop more</a>
+      <a href="{% url 'store' %}" class="btn btn-success">Mostrar más</a>
     </div>
   </div>
 
@@ -34,7 +34,7 @@
                 <div class="invoice-from">
                   <ul class="list-unstyled text-right">
                     <li>
-                      <strong>Invoiced To</strong>
+                      <strong>Facturado a</strong>
                     </li>
                     <li>{{ order.full_name }}</li>
                     <li>{{ order.full_address }}</li>
@@ -53,10 +53,10 @@
                         <strong>Order</strong> #{{ order_number }}
                       </li>
                       <li>
-                        <strong>Transaction ID</strong> {{ transID }}
+                        <strong>Transacción ID</strong> {{ transID }}
                       </li>
                       <li>
-                        <strong>Order Date:</strong> {{ order.created_at }}
+                        <strong>Fecha de la orden:</strong> {{ order.created_at }}
                       </li>
                       <li>
                         <strong>Status:</strong> {{ payment.status }}
